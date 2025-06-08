@@ -18,9 +18,9 @@ const App = () => {
       <Navbar></Navbar>
       <Hero></Hero>
       <Personal></Personal>
+      <LogoShowcase></LogoShowcase>
       <Counter></Counter>
       <ShowcaseSection></ShowcaseSection>
-      <LogoShowcase></LogoShowcase>
       <FeatureCards></FeatureCards>
       <ExperienceSection></ExperienceSection>
       <TechStack></TechStack>
