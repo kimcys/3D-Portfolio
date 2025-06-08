@@ -4,6 +4,10 @@ const navLinks = [
     link: "#work",
   },
   {
+    name: "Personal",
+    link: "#personal",
+  },
+  {
     name: "Experience",
     link: "#experience",
   },
@@ -29,64 +33,109 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
+  { value: 2, suffix: "+", label: "Years of Experience" },
+  { value: 10, suffix: "+", label: "Satisfied Clients" },
+  { value: 10, suffix: "+", label: "Completed Projects" },
   { value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    imgPath: "/images/logos/tm.png",
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    imgPath: "/images/logos/mnrb.png",
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    imgPath: "/images/logos/tm.png",
   },
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    imgPath: "/images/logos/mnrb.png",
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    imgPath: "/images/logos/tm.png",
   },
   {
-    imgPath: "/images/logos/company-logo-6.png",
+    imgPath: "/images/logos/mnrb.png",
   },
   {
-    imgPath: "/images/logos/company-logo-7.png",
+    imgPath: "/images/logos/tm.png",
   },
   {
-    imgPath: "/images/logos/company-logo-8.png",
+    imgPath: "/images/logos/mnrb.png",
   },
   {
-    imgPath: "/images/logos/company-logo-9.png",
+    imgPath: "/images/logos/tm.png",
   },
   {
-    imgPath: "/images/logos/company-logo-10.png",
+    imgPath: "/images/logos/mnrb.png",
   },
   {
-    imgPath: "/images/logos/company-logo-11.png",
+    imgPath: "/images/logos/tm.png",
+  },
+  {
+    imgPath: "/images/logos/mnrb.png",
+  },
+];
+
+const personals = [
+  {
+    title: "💻 Profession",
+    desc: "Software Developer 👨🏻‍💻",
+  },
+  {
+    title: "📍 Based In",
+    desc: "Cyberjaya, MY 🇲🇾",
+  },
+  {
+    title: "🌟 Interests",
+    desc: "Football, Futsal, Running 🏃",
+  },
+  {
+    title: "🔴 Club Support",
+    desc: "Die-hard Manchester United fan ⚽",
+  },
+  {
+    title: "🧠 Mindset",
+    desc: "Always learning, always building 🚀",
+  },
+  {
+    title: "🐐 Fun Fact",
+    desc: "CR7 admirer since day one 🐐",
   },
 ];
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    imgPath: "🎨 🧠",
+    title: "Creative Engineering",
+    desc: "Blending design thinking with front-end code to build visually stunning and intuitive user experiences.",
   },
   {
-    imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    imgPath: "🖥️ 🔌 ",
+    title: "Backend Ready",
+    desc: "Building robust backend systems using Express.js, REST APIs, and integrating seamlessly with full-stack workflows.",
   },
   {
-    imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    imgPath: "🛠️ 🔍",
+    title: "Tech & Detail Driven",
+    desc: "Combining deep technical skills with meticulous attention to detail across React, Angular, Tailwind, and performance testing.",
   },
+  {
+    imgPath: "🧠 🖼️",
+    title: "Visual Web Tools",
+    desc: "Skilled in Framer and Wix to rapidly prototype and build beautiful, responsive websites with a strong design foundation.",
+  },
+  {
+    imgPath: "📚 ⚙️",
+    title: "Always Evolving",
+    desc: "Continuously learning and applying new tools, frameworks, and best practices to sharpen both frontend and backend skills.",
+  },
+  {
+    imgPath: "🤝 🧑‍💻",
+    title: "Reliable & Independent",
+    desc: "Taking full ownership of tasks and delivering clean, scalable solutions — whether solo or in collaboration.",
+  }
 ];
 
 const techStackImgs = [
@@ -120,6 +169,13 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
+    name: "Angular Developer",
+    modelPath: "/models/angular-transformed.glb",
+    scale: 3.0,
+    rotation: [Math.PI / 1, -Math.PI / 8, Math.PI],
+    position: [2, 0, 0]
+  },
+  {
     name: "Python Developer",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
@@ -138,7 +194,7 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "Git Version Control",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
@@ -147,39 +203,43 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
+    review: "Aiman demonstrated a strong grasp of testing methodologies and front-end design. His contribution to performance testing and UI development greatly improved our testing workflows.",
+    imgPath: "/images/logos/tm.png",
+    logoPath: "/images/logos/tm.png",
+    title: "Software Engineer Intern",
+    date: "2023",
+    responsibilities: [
+      "Conducted performance testing under various load scenarios to assess system efficiency.",
+      "Executed manual testing for rigorous system validation and UX evaluation.",
+      "Designed user interfaces for SQA Mobile and SQA PT Mobile applications.",
+      "Developed the frontend for the SQA PT portal, streamlining performance testing workflows.",
+      "Performed network testing to analyze and enhance computer network performance.",
+    ],
+  },
+  {
+    review: "Aiman was instrumental in building a responsive and user-friendly portal for Takaful Ikhlas. His attention to detail and ability to deliver features end-to-end stood out.",
+    imgPath: "/images/logos/mnrb.png",
+    logoPath: "/images/logos/mnrb.png",
     title: "Frontend Developer",
-    date: "January 2023 - Present",
+    date: "2023 – 2024",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Developed the Customer Portal for Takaful Ikhlas with a focus on usability and accessibility.",
+      "Implemented key features such as account registration, login, dashboard, and certificate management.",
+      "Handled document downloads, claim submissions, and announcement modules.",
+      "Built customer support features to enhance communication and assistance.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    review: "Aiman consistently delivers high-quality code and design. His frontend expertise helped shape the eHealth portal into a scalable and intuitive platform.",
+    imgPath: "/images/logos/tm.png",
+    logoPath: "/images/logos/tm.png",
+    title: "Frontend Developer",
+    date: "2024 – Present",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
-    ],
-  },
-  {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
-    responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Designed and implemented a secure login flow using Keycloak for user authentication.",
+      "Built a comprehensive analytics dashboard with data visualizations for administrators.",
+      "Developed a responsive and intuitive web portal for users to access eHealth services.",
+      "Deployed the portal using Docker, ensuring scalable and efficient delivery.",
     ],
   },
 ];
@@ -201,75 +261,44 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Ts. Dr. Sufri Muhammad",
+    mentions: "UPM, Malaysia",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
+      "Supervising Mr. Aiman in his project was relatively straightforward, as he effectively managed tasks and engaged with stakeholders independently. He successfully delivered each task and even secured a copyright with MyIPO for his project. I am confident that he will continue to achieve more in the future.",
+    imgPath: "/images/sufri.png",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    name: "Takaful Ikhlas",
+    mentions: "MNRB, Malaysia",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
+      "Aiman demonstrated strong ownership and technical skills while contributing to the Go Serve Portal project. His ability to implement user-friendly features and optimize portal performance significantly enhanced the platform's usability for both customers and agents. The collaboration was smooth, and his dedication to quality was evident throughout.",
+    imgPath: "/images/ti.png",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
+    name: "Nawawi Bakhtir",
+    mentions: "Cyberjaya, Malaysia",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    imgPath: "/images/client2.png",
-  },
-  {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
-    review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
-  },
-  {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
-    review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: "/images/client4.png",
-  },
-  {
-    name: "Albert Flores",
-    mentions: "@albertflores",
-    review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
+      "Aiman's artistic prowess and technical finesse elevated our website into a visually captivating platform.",
+    imgPath: "/images/nawawi.png",
   },
 ];
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
-    url: "https://www.instagram.com/"
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-    url: "https://www.instagram.com/"
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
-    url: "https://www.instagram.com/"
-  },
-  {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
-    url: "https://www.instagram.com/"
+    url: "https://www.linkedin.com/in/aimanhakimcy/"
+  },
+  {
+    name: "KDX",
+    imgPath: "/images/kdx.png",
   },
 ];
 
 export {
   words,
   abilities,
+  personals,
   logoIconsList,
   counterItems,
   expCards,

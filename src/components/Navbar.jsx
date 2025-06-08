@@ -25,8 +25,8 @@ const Navbar = () => {
     return (
         <header className={`navbar ${scrolled ? 'scrolled' : 'not-scrolled'}`}>
             <div className='inner'>
-                <a className='logo' href='#hero'>
-                    Aiman | KDX
+                <a className='logo flex justify-center items-center' href='#hero'>
+                    Aiman | <img className='w-16' src='/images/kdx-nobg.png'></img>
                 </a>
 
                 <nav className="desktop">

@@ -50,33 +50,36 @@ const ShowcaseSection = () => {
                     {/* Left */}
                     <div ref={rydeRef} className='first-project-wrapper'>
                         <div className='image-wrapper'>
-                            <img src='/images/project1.png' alt='CX-Portal'></img>
+                            <img src='/images/cx.png' alt='CX-Portal'></img>
                         </div>
                         <div className='text-content'>
-                            <h2>On-Demand Rides Made Simple with a Powerful, User-Friendly App called Ryde</h2>
+                            <h2>Go Serve Portal</h2>
                             <p className="text-white-50 md:text-xl">
-                                An app built with React Native, Expo, & TailwindCSS for a fast,
-                                user-friendly experience.
+                                An app built with Angular for 
+                                an online platform designed to provide you with 
+                                convenient access to manage your Takaful certificate(s) 
+                                account, view and manage certificate details, 
+                                make payments, and seek support for all your Takaful needs.
                             </p>
                         </div>
                     </div>
                     {/* Right */}
                     <div className="project-list-wrapper overflow-hidden">
                         <div className="project" ref={libraryRef}>
-                            <div className="image-wrapper bg-[#FFEFDB]">
+                            <div className="image-wrapper bg-[#F2F1EB]">
                                 <img
-                                    src="/images/project2.png"
-                                    alt="Library Management Platform"
+                                    src="/images/ic.png"
+                                    alt="IC"
                                 />
                             </div>
-                            <h2>The Library Management Platform</h2>
+                            <h2>Ice Cold FC Portal</h2>
                         </div>
 
                         <div className="project" ref={ycDirectoryRef}>
-                            <div className="image-wrapper bg-[#FFE7EB]">
-                                <img src="/images/project3.png" alt="YC Directory App" />
+                            <div className="image-wrapper bg-[#F2F1EB]">
+                                <img src="/images/cms.png" alt="CMS App" />
                             </div>
-                            <h2>YC Directory - A Startup Showcase App</h2>
+                            <h2>Computer Maintenance System</h2>
                         </div>
                     </div>
                 </div>

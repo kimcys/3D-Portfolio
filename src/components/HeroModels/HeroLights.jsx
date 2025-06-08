@@ -16,14 +16,14 @@ const HeroLights = () => {
                 angle={0.3}
                 penumbra={0.5}
                 intensity={40}
-                color="red"
+                color="white"
             />
             <spotLight
                 position={[-3, 5, 5]}
                 angle={0.4}
                 penumbra={1}
                 intensity={60}
-                color="red"
+                color="white"
             />
 
             <primitive
