@@ -10,7 +10,7 @@ const Personal = () => {
     })
 
     return (
-        <section id="personal" ref={ref} className='mb-40'>
+        <section id="personal" ref={ref} className='mb-10'>
             <div className="w-full padding-x-lg">
                 <div className="mx-auto flex flex-col gap-4">
                     {/* Personal Info Card */}
