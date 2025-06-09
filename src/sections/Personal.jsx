@@ -28,7 +28,7 @@ const Personal = () => {
                             />
                         </div>
                         <h3 className="text-white text-2xl font-semibold mt-2">Aiman Hakim</h3>
-                        <p className="text-white-50 text-lg">  Eat, Sleep, Code, Football 🔁</p>
+                        <p className="text-white-50 text-lg">  Eat. Sleep. Code. Football 🔁</p>
                     </motion.div>
 
                     <div className='grid-3-cols gap-6'>

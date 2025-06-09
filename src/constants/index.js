@@ -1,11 +1,11 @@
 const navLinks = [
   {
-    name: "Work",
-    link: "#work",
-  },
-  {
     name: "Personal",
     link: "#personal",
+  },
+  {
+    name: "Work",
+    link: "#work",
   },
   {
     name: "Experience",
@@ -100,7 +100,7 @@ const personals = [
     desc: "Always learning, always building 🚀",
   },
   {
-    title: "🐐 Fun Fact",
+    title: "🤓 Fun Fact",
     desc: "CR7 admirer since day one 🐐",
   },
 ];
