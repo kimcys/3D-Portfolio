@@ -33,7 +33,7 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 2, suffix: "+", label: "Years of Experience" },
+  { value: 3, suffix: "+", label: "Years of Experience" },
   { value: 10, suffix: "+", label: "Satisfied Clients" },
   { value: 10, suffix: "+", label: "Completed Projects" },
   { value: 90, suffix: "%", label: "Client Retention Rate" },
@@ -80,59 +80,59 @@ const logoIconsList = [
 
 const personals = [
   {
-    title: "💻 Profession",
-    desc: "Software Developer 👨🏻‍💻",
+    title: "Profession",
+    desc: "Web Developer who turns ideas into working systems",
   },
   {
-    title: "📍 Based In",
+    title: "Based In",
     desc: "Cyberjaya, MY 🇲🇾",
   },
   {
-    title: "🌟 Interests",
-    desc: "Football, Futsal, Running 🏃",
+    title: "Builder Mode",
+    desc: "Real-time apps, clean architecture & practical solutions",
   },
   {
-    title: "🔴 Club Support",
-    desc: "Die-hard Manchester United fan ⚽",
+    title: "Work Style",
+    desc: "Minimal, structured, and performance-focused",
   },
   {
-    title: "🧠 Mindset",
-    desc: "Always learning, always building 🚀",
+    title: "Growth",
+    desc: "Continuously refining skills",
   },
   {
-    title: "🤓 Fun Fact",
-    desc: "CR7 admirer since day one 🐐",
+    title: "Problem Solving",
+    desc: "Break it down. Fix it properly. Improve it further.",
   },
 ];
 
 const abilities = [
   {
-    imgPath: "🎨 🧠",
+    imgPath: "🎨",
     title: "Creative Engineering",
     desc: "Blending design thinking with front-end code to build visually stunning and intuitive user experiences.",
   },
   {
-    imgPath: "🖥️ 🔌 ",
-    title: "Backend Ready",
-    desc: "Building robust backend systems using Express.js, REST APIs, and integrating seamlessly with full-stack workflows.",
+    imgPath: "🖥️",
+    title: "Backend That Works",
+    desc: "Building robust backend systems using Express.js and NestJS, REST APIs, and integrating seamlessly with full-stack workflows.",
   },
   {
-    imgPath: "🛠️ 🔍",
+    imgPath: "🛠️",
     title: "Tech & Detail Driven",
     desc: "Combining deep technical skills with meticulous attention to detail across React, Angular, Tailwind, and performance testing.",
   },
   {
-    imgPath: "🧠 🖼️",
+    imgPath: "🖼️",
     title: "Visual Web Tools",
     desc: "Skilled in Framer and Wix to rapidly prototype and build beautiful, responsive websites with a strong design foundation.",
   },
   {
-    imgPath: "📚 ⚙️",
+    imgPath: "📚",
     title: "Always Evolving",
     desc: "Continuously learning and applying new tools, frameworks, and best practices to sharpen both frontend and backend skills.",
   },
   {
-    imgPath: "🤝 🧑‍💻",
+    imgPath: "🤝",
     title: "Reliable & Independent",
     desc: "Taking full ownership of tasks and delivering clean, scalable solutions — whether solo or in collaboration.",
   }
@@ -143,10 +143,10 @@ const techStackImgs = [
     name: "React Developer",
     imgPath: "/images/logos/react.png",
   },
-  {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
-  },
+  // {
+  //   name: "Python Developer",
+  //   imgPath: "/images/logos/python.svg",
+  // },
   {
     name: "Backend Developer",
     imgPath: "/images/logos/node.png",
@@ -175,12 +175,12 @@ const techStackIcons = [
     rotation: [Math.PI / 1, -Math.PI / 8, Math.PI],
     position: [2, 0, 0]
   },
-  {
-    name: "Python Developer",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.8,
-    rotation: [0, 0, 0],
-  },
+  // {
+  //   name: "Python Developer",
+  //   modelPath: "/models/python-transformed.glb",
+  //   scale: 0.8,
+  //   rotation: [0, 0, 0],
+  // },
   {
     name: "Backend Developer",
     modelPath: "/models/node-transformed.glb",
@@ -236,12 +236,17 @@ const expCards = [
     title: "Frontend Developer",
     date: "2024 – Present",
     responsibilities: [
+      "Led the full upgrade of the SmartFMS frontend from Angular 9 to Angular 20, modernizing the architecture and ensuring production stability.",
+      "Transitioned the application to Angular Standalone APIs and improved maintainability by removing legacy dependencies and technical debt.",
+      "Migrated the build system from Webpack to Vite, improving build performance and developer experience.",
+      "Upgraded key UI libraries and third-party integrations to align with modern Angular standards.",
+      "Modernized testing by migrating from Jasmine/Karma to Vitest and conducted comprehensive unit and end-to-end testing.",
       "Designed and implemented a secure login flow using Keycloak for user authentication.",
       "Built a comprehensive analytics dashboard with data visualizations for administrators.",
       "Developed a responsive and intuitive web portal for users to access eHealth services.",
-      "Deployed the portal using Docker, ensuring scalable and efficient delivery.",
+      "Deployed the portal using Docker, ensuring scalable and efficient delivery."
     ],
-  },
+  }
 ];
 
 const expLogos = [
