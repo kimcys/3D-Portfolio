@@ -88,20 +88,20 @@ const personals = [
     desc: "Cyberjaya, MY 🇲🇾",
   },
   {
-    title: "Builder Mode",
-    desc: "Real-time apps, clean architecture & practical solutions",
+    title: "Personality",
+    desc: "Purpose-driven builder who wants to create things that truly help people",
   },
   {
-    title: "Work Style",
-    desc: "Minimal, structured, and performance-focused",
+    title: "Vision",
+    desc: "Focused on developing something valuable, usable, and meaningful for everyone",
   },
   {
-    title: "Growth",
-    desc: "Continuously refining skills",
+    title: "Passion",
+    desc: "Manchester United supporter who loves football and futsal",
   },
   {
-    title: "Problem Solving",
-    desc: "Break it down. Fix it properly. Improve it further.",
+    title: "Character",
+    desc: "Always striving to grow and become better than yesterday",
   },
 ];
 
