@@ -1,5 +1,5 @@
 import React from 'react'
-import { Environment, Float, OrbitControls, useGLTF } from "@react-three/drei";
+import { Environment, Float, Lightformer, OrbitControls, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useEffect } from "react";
 import * as THREE from "three";
@@ -17,14 +17,18 @@ const TechIcon = ({ model }) => {
         }
       });
     }
-  }, [scene]);
+  }, [model.name, scene]);
 
   return (
     <Canvas>
       <ambientLight intensity={0.3}></ambientLight>
       <directionalLight position={[5, 5, 5]} intensity={1}></directionalLight>
       <OrbitControls enableZoom={false}></OrbitControls>
-      <Environment preset='city'></Environment>
+      <Environment resolution={128}>
+        <Lightformer intensity={3} position={[0, 4, 6]} scale={[8, 5, 1]} />
+        <Lightformer intensity={1.5} position={[-5, 2, -3]} scale={[5, 5, 1]} />
+        <Lightformer intensity={1} position={[5, -1, -4]} scale={[4, 3, 1]} />
+      </Environment>
 
       <Float speed={5.5} rotationIntensity={0.5} floatIntensity={0.9}>
         <group scale={model.scale} rotation={model.rotation} position={model.position}>
