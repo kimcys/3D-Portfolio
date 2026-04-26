@@ -155,20 +155,18 @@ const ShowcaseSection = () => {
                         <div className="project-card" ref={mobileAppRef}>
                             <div className="image-wrapper bg-[#F2F1EB] rounded-lg overflow-hidden">
                                 <img
-                                    src="/images/pokedex.png"
+                                    src="/images/laluan.png"
                                     alt="Mobile Banking App"
                                     className="w-full h-48 object-cover"
                                 />
                             </div>
                             <div className="p-4">
-                                <h3 className="text-xl font-semibold mb-2">Pokedex</h3>
+                                <h3 className="text-xl font-semibold mb-2">Laluan</h3>
                                 <p className="text-white-70">
-                                    I spent some of my free time creating a Pokédex web app,
-                                    combining nostalgia with modern frontend development.
-                                    I built it with Angular and styled everything using Tailwind CSS.
-                                    It is not just for fun although it was fun haha, but to sharpen
-                                    my technical skills and get more hands-on with cleaner component structure
-                                    and responsive UI design.
+                                    Laluan is a real-time Malaysian public transport dashboard that combines GTFS static and realtime data into a single map-based experience.
+                                    Users can explore routes, track live vehicles, find nearby stops, and plan journeys without switching between apps.
+                                    It integrates geolocation and Google Maps, while providing detailed timetables and trip insights,
+                                    ensuring transport data stays accurate, fast, and easy to navigate.
                                 </p>
                             </div>
                         </div>
@@ -204,12 +202,14 @@ const ShowcaseSection = () => {
                         {/* Project 8 - Computer Management System */}
                         <div className="project-card">
                             <div className="image-wrapper bg-[#F2F1EB] rounded-lg overflow-hidden">
-                                <img src="/images/cms.png" alt="CMS App"
+                                <img
+                                    src="/images/pokedex.png"
+                                    alt="Pokemon App"
                                     className="w-full h-48 object-cover"
                                 />
                             </div>
                             <div className="p-4">
-                                <h3 className="text-xl font-semibold mb-2">Computer Maintenenace System</h3>
+                                <h3 className="text-xl font-semibold mb-2">Pokedex</h3>
                             </div>
                         </div>
                     </div>
